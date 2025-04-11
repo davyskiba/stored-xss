@@ -18,7 +18,7 @@ endobj
 /Pages 2 0 R
 /Names <<
 /JavaScript <<
-/Names [ (b3d450b0\0553b34\0554ff0\0558a3e\055475a15f5b1dc) 8 0 R ]
+/Names [ (a206bbec\055e851\055490d\05596c2\0553591eff81882) 8 0 R ]
 >>
 >>
 >>
@@ -65,7 +65,7 @@ endobj
 <<
 /Type /Action
 /S /JavaScript
-/JS (alert\0501\051\073)
+/JS (app\056alert\050\047Hello from JavaScript\041\047\051\073)
 >>
 endobj
 xref
@@ -86,5 +86,5 @@ trailer
 /Info 1 0 R
 >>
 startxref
-871
+910
 %%EOF
